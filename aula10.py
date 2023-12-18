@@ -9,6 +9,8 @@ tres_vezes_luiz = 3 * 'Luiz'
 
 #alterado no github
 
+#alterado no vscode
+
 print(a_dez_vezes)
 print(tres_vezes_luiz)
 
