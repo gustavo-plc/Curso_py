@@ -21,3 +21,6 @@ menor_ou_igual = 2 <= 2
 igual = 'a' == 'a'
 diferente = 'a' != 'b'
 print(diferente)
+
+#conceito de shell interativo
+#python -i nome_do_arquivo.py
