@@ -6,7 +6,7 @@ inteiro, informe que não é um número inteiro.
 
 numero = input('Digite um número inteiro\n')
 
-try:
+try: #ou utilizando o método isDigit()
     numero_inteiro = int(numero)
     print(f'O número inteiro digitado foi {numero_inteiro}')
     if numero_inteiro % 2 == 0:
@@ -44,9 +44,14 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 
 nome = input('Favor digite seu primeiro nome:\n')
 
-if len(nome) <= 4: 
-    print('Seu nome é curto!')
-elif len(nome) > 6: 
-    print('Seu nome é muito grande!')
-else:
-    print('Seu nome é normal!')
+
+try: 
+    nome_num = float(nome)
+    print(f'Você digitou um número!')
+except:
+    if len(nome) <= 4: 
+        print('Seu nome é curto!')
+    elif len(nome) > 6: 
+        print('Seu nome é muito grande!')
+    else:
+        print('Seu nome é normal!')
